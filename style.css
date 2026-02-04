@@ -9,11 +9,11 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  filter: blur(4px);
+  /* filter: blur(4px); */
   transform: scale(1.1);
   /* box-shadow: none; */
-  height: 100%;
-  width: 100%;
+  height: 100dvh;
+  width: 100vw;
   position: fixed;
   top: 0;
   left: 0;
@@ -28,6 +28,7 @@
 
 .main-div > header, footer {
   background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
   color: #fff;
   font-weight: 600;
   font-size: x-large;
@@ -45,8 +46,9 @@
 
 .main-div > main {
   background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
   color: white;
-  height: 100vh;
+  height: calc(100dvh - 80px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,6 +59,7 @@
 
 main > .drum {
   background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
   width: 90px;
   height: 90px;
   display: flex;
@@ -97,4 +100,21 @@ main > .drum-pressed {
 
 .uwu-girl-show {
   display: block;
+}
+
+.fullscreen-button {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  backdrop-filter: blur(10px);
+  position: absolute;
+  top: 10%;
+  right: 2%;
+  border-radius: 20px;
+  cursor: pointer;
 }

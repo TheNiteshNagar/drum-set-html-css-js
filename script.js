@@ -102,3 +102,13 @@ function playAudio(keyName) {
       break;
   }
 }
+
+
+// add full screen button 
+document.querySelector('.fullscreen-button').addEventListener('click', () => {
+  if(document.fullscreenElement) {
+    document.exitFullscreen()
+  } else {
+    document.body.requestFullscreen()
+  }
+})
