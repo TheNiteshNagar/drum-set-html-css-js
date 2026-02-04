@@ -1,3 +1,14 @@
+// define audio at global so audio won't have to load when event happen
+const audio1 = new Audio('./public/audio-1.mp3')
+const audio2 = new Audio('./public/audio-2.mp3')
+const audio3 = new Audio('./public/audio-3.mp3')
+const audio4 = new Audio('./public/audio-4.mp3')
+const audio5 = new Audio('./public/audio-5.mp3')
+const audio6 = new Audio('./public/audio-6.mp3')
+const audio7 = new Audio('./public/audio-7.mp3')
+const audioUwu = new Audio('./public/audio-uwu.mp3')
+
+
 const drums = document.querySelectorAll('.drum');
 
 for (const drum of drums) {
@@ -55,36 +66,36 @@ function onKeyboardButtonClick(e) {
 function playAudio(keyName) {
   switch (keyName) {
     case 'a':
-      audio = new Audio('./public/audio-1.mp3')
-      audio.play()
+      audio1.currentTime = 0
+      audio1.play()
       break;
     case 's':
-      audio = new Audio('./public/audio-2.mp3')
-      audio.play()
+      audio2.currentTime = 0
+      audio2.play()
       break;
     case 'd':
-      audio = new Audio('./public/audio-3.mp3')
-      audio.play()
+      audio3.currentTime = 0
+      audio3.play()
       break;
     case 'f':
-      audio = new Audio('./public/audio-4.mp3')
-      audio.play()
+      audio4.currentTime = 0
+      audio4.play()
       break;
     case 'j':
-      audio = new Audio('./public/audio-5.mp3')
-      audio.play()
+      audio5.currentTime = 0
+      audio5.play()
       break;
     case 'k':
-      audio = new Audio('./public/audio-6.mp3')
-      audio.play()
+      audio6.currentTime = 0
+      audio6.play()
       break;
     case 'l':
-      audio = new Audio('./public/audio-7.mp3')
-      audio.play()
+      audio7.currentTime = 0
+      audio7.play()
       break;
     case 'uwu':
-      audio = new Audio('./public/audio-uwu.mp3')
-      audio.play()
+      audioUwu.currentTime = 0
+      audioUwu.play()
       break
 
     default:
